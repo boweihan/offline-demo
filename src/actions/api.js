@@ -118,7 +118,19 @@ export const checkOut = (book, user) => {
       types: [
         types.CHECK_OUT_REQUEST,
         types.CHECK_OUT_SUCCESS,
-        types.CHECK_OUT_FAILURE,
+        {
+          type: types.CHECK_OUT_FAILURE,
+          meta: {
+            offline: {
+              id: Date.now(),
+              bookId: book.id,
+              userId: user.id,
+              dueInDays: 7,
+              timestampOut: new Date().getTime(),
+              timestampIn: null,
+            },
+          },
+        },
       ],
       headers: HEADERS_BASE,
       body: JSON.stringify({
@@ -140,7 +152,17 @@ export const checkIn = checkOutId => {
       types: [
         types.CHECK_IN_REQUEST,
         types.CHECK_IN_SUCCESS,
-        types.CHECK_IN_FAILURE,
+        {
+          type: types.CHECK_IN_FAILURE,
+          meta: {
+            offline: {
+              id: checkOutId,
+              dueInDays: 0,
+              timestampOut: null,
+              timestampIn: new Date().getTime(),
+            },
+          },
+        },
       ],
       headers: HEADERS_BASE,
       body: JSON.stringify({
