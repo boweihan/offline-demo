@@ -1,4 +1,4 @@
-import { BOOKS_FETCH_SUCCESS } from '../actions';
+import { BOOKS_FETCH_SUCCESS, BOOKS_FETCH_FAILURE } from '../actions';
 
 import { getCurrentCheckOuts } from './checkOuts';
 
@@ -37,6 +37,11 @@ const books = (
         // entity's state based on API response. This is the quick and dirty
         // way :) It will only work if we never re-fetch data.
         ...normalizeBookList(action.payload),
+      };
+    case BOOKS_FETCH_FAILURE:
+      return {
+        ...state,
+        isLoading: false,
       };
     default:
       return state;

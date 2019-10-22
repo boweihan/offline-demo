@@ -1,9 +1,9 @@
-import { USERS_FETCH_SUCCESS } from '../actions';
+import { USERS_FETCH_SUCCESS, USERS_FETCH_FAILURE } from '../actions';
 
 const users = (
   state = {
     isLoading: true,
-    list: []
+    list: [],
   },
   action,
 ) => {
@@ -12,6 +12,11 @@ const users = (
       return {
         ...state,
         list: action.payload,
+        isLoading: false,
+      };
+    case USERS_FETCH_FAILURE:
+      return {
+        ...state,
         isLoading: false,
       };
     default:
