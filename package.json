@@ -32,6 +32,6 @@
     "test": "react-scripts test --env=jsdom",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "serve": "PORT=80 serve -s build"
   }
 }

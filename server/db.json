@@ -315,6 +315,14 @@
       "timestampOut": null,
       "timestampIn": 1571759338066,
       "id": 20
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571761630653,
+      "timestampIn": null,
+      "id": 21
     }
   ]
 }
