@@ -15,7 +15,7 @@ const style = {
   },
 };
 
-const BookList = ({ heading, books, selectedUser, checkout }) => (
+const BookList = ({ heading, books, selectedUser, checkOut, checkIn }) => (
   <div style={style.container}>
     <ListHeading text={heading} />
     <ul style={style.list}>
@@ -24,7 +24,8 @@ const BookList = ({ heading, books, selectedUser, checkout }) => (
           <BookListItem
             key={book.id}
             {...book}
-            checkout={checkout && (() => checkout(book, selectedUser))}
+            checkOut={checkOut && (() => checkOut(book, selectedUser))}
+            checkIn={checkIn && (() => checkIn(book.checkOutId))}
           />
         );
       })}
@@ -45,7 +46,8 @@ BookList.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
   }),
-  checkout: PropTypes.func,
+  checkOut: PropTypes.func,
+  checkIn: PropTypes.func,
 };
 
 export default BookList;

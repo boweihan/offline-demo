@@ -9,7 +9,8 @@ import {
   fetchBooks,
   fetchCheckOuts,
   selectUser,
-  checkout,
+  checkOut,
+  checkIn,
 } from '../actions';
 
 // selector imports
@@ -54,9 +55,13 @@ class BookPage extends React.Component {
             books={this.props.availableBooks}
             selectedUser={this.props.selectedUser}
             heading="Available Books"
-            checkout={this.props.checkout}
+            checkOut={this.props.checkOut}
           />
-          <BookList books={this.props.booksForUser} heading="Your Books" />
+          <BookList
+            books={this.props.booksForUser}
+            heading="Your Books"
+            checkIn={this.props.checkIn}
+          />
         </div>
         <BookList
           books={this.props.checkedOutBooks}
@@ -92,7 +97,8 @@ const mapDispatchToProps = {
   fetchBooks,
   fetchCheckOuts,
   selectUser,
-  checkout,
+  checkOut,
+  checkIn,
 };
 
 export default connect(

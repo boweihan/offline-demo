@@ -10,11 +10,11 @@ const HEADERS_BASE = {
 const API_URL_BASE = 'http://localhost:8000/';
 
 /*
-* Redux API Middleware (https://github.com/agraboso/redux-api-middleware)
-* will intercept any action that contains the RSAA key, and instead dispatch
-* some of the actions defined in the types property below, based on how
-* the request resolves. It uses the new JavaScript Fetch API internally.
-*/
+ * Redux API Middleware (https://github.com/agraboso/redux-api-middleware)
+ * will intercept any action that contains the RSAA key, and instead dispatch
+ * some of the actions defined in the types property below, based on how
+ * the request resolves. It uses the new JavaScript Fetch API internally.
+ */
 
 export const fetchUsers = () => {
   return {
@@ -32,18 +32,18 @@ export const fetchUsers = () => {
 };
 
 /*
-* This is more or less functionally equivalent with the commented out
-* redux-api-middleware fetchBooks action defined below. There are many
-* different ways to handle async actions in redux. redux-api-middleware is
-* a nice abstraction (IMO ;) for AJAX requests, because they always have
-* one initial action and two possible outcomes, among other similarities.
-*
-* Here, we are directly calling Fetch, while returning a function from our
-* action creator. This returned function is intercepted by thunk middleware
-* and called with an action dispatcher, allowing us to dispatch multiple
-* actions in one method. The way you decide to control dispatching these
-* actions (Promise, Observable, timeout, etc.) is completely up to you.
-*/
+ * This is more or less functionally equivalent with the commented out
+ * redux-api-middleware fetchBooks action defined below. There are many
+ * different ways to handle async actions in redux. redux-api-middleware is
+ * a nice abstraction (IMO ;) for AJAX requests, because they always have
+ * one initial action and two possible outcomes, among other similarities.
+ *
+ * Here, we are directly calling Fetch, while returning a function from our
+ * action creator. This returned function is intercepted by thunk middleware
+ * and called with an action dispatcher, allowing us to dispatch multiple
+ * actions in one method. The way you decide to control dispatching these
+ * actions (Promise, Observable, timeout, etc.) is completely up to you.
+ */
 
 export const fetchBooks = () => dispatch => {
   // Generic error handling for Fetch requests.
@@ -110,7 +110,7 @@ export const fetchCheckOuts = () => {
   };
 };
 
-export const checkout = (book, user) => {
+export const checkOut = (book, user) => {
   return {
     [RSAA]: {
       endpoint: API_URL_BASE + 'checkOuts',
@@ -127,6 +127,26 @@ export const checkout = (book, user) => {
         dueInDays: 7,
         timestampOut: new Date().getTime(),
         timestampIn: null,
+      }),
+    },
+  };
+};
+
+export const checkIn = checkOutId => {
+  return {
+    [RSAA]: {
+      endpoint: API_URL_BASE + 'checkOuts/' + checkOutId,
+      method: 'PATCH',
+      types: [
+        types.CHECK_IN_REQUEST,
+        types.CHECK_IN_SUCCESS,
+        types.CHECK_IN_FAILURE,
+      ],
+      headers: HEADERS_BASE,
+      body: JSON.stringify({
+        dueInDays: 0,
+        timestampOut: null,
+        timestampIn: new Date().getTime(),
       }),
     },
   };

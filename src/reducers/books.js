@@ -8,7 +8,7 @@ const normalizeBookList = bookList => {
 
   bookList.forEach(book => {
     byId[book.id] = { ...book };
-    idList.push(book.id)
+    idList.push(book.id);
   });
 
   return {
@@ -57,7 +57,10 @@ export const getAvailableBooks = state => {
 export const getBooksCheckedOutByCurrentUser = state => {
   return getCurrentCheckOuts(state)
     .filter(checkOut => checkOut.userId === state.ui.selectedUserId)
-    .map(checkOut => getBookById(state, checkOut.bookId));
+    .map(checkOut => ({
+      ...getBookById(state, checkOut.bookId),
+      checkOutId: checkOut.id,
+    }));
 };
 
 export const getBooksCheckedOutByOtherUsers = state => {

@@ -168,97 +168,153 @@
       "id": 2,
       "userId": 1,
       "bookId": 1,
-      "dueInDays": 3,
-      "timestampOut": 1537208767516,
-      "timestampIn": null
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759333324
     },
     {
       "id": 3,
       "userId": 2,
       "bookId": 14,
-      "dueInDays": 7,
-      "timestampOut": 1537208767516,
-      "timestampIn": null
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759347171
     },
     {
       "bookId": 8,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326709611,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759333531,
       "id": 4
     },
     {
       "bookId": 2,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326711578,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759333714,
       "id": 5
     },
     {
       "bookId": 3,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326762978,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759333851,
       "id": 6
     },
     {
       "bookId": 5,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326764561,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759333979,
       "id": 7
     },
     {
       "bookId": 7,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326764969,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759334107,
       "id": 8
     },
     {
       "bookId": 9,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326765873,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759334251,
       "id": 9
     },
     {
       "bookId": 10,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326766315,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759334379,
       "id": 10
     },
     {
       "bookId": 11,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326766636,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759334515,
       "id": 11
     },
     {
       "bookId": 12,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1537326766909,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759334659,
       "id": 12
     },
     {
       "bookId": 4,
       "userId": 2,
-      "dueInDays": 7,
-      "timestampOut": 1537326771320,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759347338,
       "id": 13
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337243,
+      "id": 14
+    },
+    {
+      "bookId": 2,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337387,
+      "id": 15
+    },
+    {
+      "bookId": 3,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337515,
+      "id": 16
+    },
+    {
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337651,
+      "id": 17
+    },
+    {
+      "bookId": 6,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337786,
+      "id": 18
+    },
+    {
+      "bookId": 7,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759337931,
+      "id": 19
+    },
+    {
+      "bookId": 8,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571759338066,
+      "id": 20
     }
   ]
 }

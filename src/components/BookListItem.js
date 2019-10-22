@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CheckoutButton from './CheckoutButton';
+import CheckinButton from './CheckinButton';
 
 const styles = {
   listItem: {
@@ -11,10 +12,11 @@ const styles = {
   },
 };
 
-const BookListItem = ({ checkedOutBy, title, checkout }) => (
+const BookListItem = ({ checkedOutBy, title, checkOut, checkIn }) => (
   <li className="list_item" style={styles.listItem}>
     {title}
-    {checkout && <CheckoutButton onClick={checkout} />}
+    {checkOut && <CheckoutButton onClick={checkOut} />}
+    {checkIn && <CheckinButton onClick={checkIn} />}
   </li>
 );
 
@@ -22,7 +24,8 @@ BookListItem.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   checkedOutBy: PropTypes.object,
-  checkout: PropTypes.func,
+  checkOut: PropTypes.func,
+  checkIn: PropTypes.func,
 };
 
 export default BookListItem;
