@@ -1,5 +1,6 @@
 import {
   CHECK_OUTS_FETCH_SUCCESS,
+  CHECK_OUTS_FETCH_FAILURE,
   CHECK_OUT_SUCCESS,
   CHECK_IN_SUCCESS,
 } from '../actions';
@@ -15,8 +16,14 @@ const checkOuts = (
   switch (action.type) {
     case CHECK_OUTS_FETCH_SUCCESS:
       return {
+        ...state,
         isLoading: false,
         list: action.payload,
+      };
+    case CHECK_OUTS_FETCH_FAILURE:
+      return {
+        ...state,
+        isLoading: false,
       };
     case CHECK_OUT_SUCCESS:
       list = [...state.list];
