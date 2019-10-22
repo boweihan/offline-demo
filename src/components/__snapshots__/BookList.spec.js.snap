@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookList component deep snapshot renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "darkgray",
+      }
+    }
+  >
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontFamily": "Open Sans",
+          "margin": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      snapshot
+    </h2>
+  </div>
+  <ul
+    style={
+      Object {
+        "listStyle": "none",
+        "margin": 0,
+        "padding": 0,
+      }
+    }
+  >
+    <li
+      className="list_item"
+      style={
+        Object {
+          "backgroundColor": "#f2f2f2",
+          "fontFamily": "Open Sans",
+          "margin": "2px 0",
+          "padding": 10,
+        }
+      }
+    >
+      a
+    </li>
+    <li
+      className="list_item"
+      style={
+        Object {
+          "backgroundColor": "#f2f2f2",
+          "fontFamily": "Open Sans",
+          "margin": "2px 0",
+          "padding": 10,
+        }
+      }
+    >
+      b
+    </li>
+  </ul>
+</div>
+`;
