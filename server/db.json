@@ -159,10 +159,42 @@
     {
       "bookId": 1,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1571779813791,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571927965112,
       "id": 1
+    },
+    {
+      "bookId": 2,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571927963871,
+      "timestampIn": null,
+      "id": 2
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571929787374,
+      "id": 3
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571930140586,
+      "id": 4
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571930384219,
+      "id": 5
     }
   ]
 }

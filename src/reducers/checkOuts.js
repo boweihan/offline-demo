@@ -45,7 +45,6 @@ const checkOuts = (
         ...state,
         list,
       };
-    // handle offline interactions
     case CHECK_OUT_FAILURE:
       list = [...state.list];
       list.push(action.meta.offline);
