@@ -48,14 +48,14 @@ const checkOuts = (
     case CHECK_OUT_FAILURE:
       list = [...state.list];
       list.push(action.meta.offline);
-      // queue up the network request
+      addToDB(action);
       return { ...state, list };
     case CHECK_IN_FAILURE:
       list = [...state.list];
       for (let i = 0; i < list.length; i++) {
         if (list[i].id === action.meta.offline.id) {
           list[i] = { ...list[i], ...action.meta.offline };
-          // queue up the network request
+          addToDB(action);
         }
       }
       return {
@@ -65,6 +65,17 @@ const checkOuts = (
     default:
       return state;
   }
+};
+
+const addToDB = action => {
+  var db = indexedDB.open('actions', 1);
+  db.onsuccess = function(event) {
+    var db = event.target.result;
+    var objStore = db
+      .transaction(['requests'], 'readwrite')
+      .objectStore('requests');
+    objStore.add(action);
+  };
 };
 
 const isCheckedOut = checkOut => !checkOut.timestampIn;

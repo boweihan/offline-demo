@@ -167,9 +167,9 @@
     {
       "bookId": 2,
       "userId": 1,
-      "dueInDays": 7,
-      "timestampOut": 1571927963871,
-      "timestampIn": null,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951520401,
       "id": 2
     },
     {
@@ -195,6 +195,166 @@
       "timestampOut": null,
       "timestampIn": 1571930384219,
       "id": 5
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951520743,
+      "id": 6
+    },
+    {
+      "bookId": 3,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951520963,
+      "id": 7
+    },
+    {
+      "id": 1571950978123,
+      "bookId": 4,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951525339
+    },
+    {
+      "id": 1571950979038,
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951524507
+    },
+    {
+      "id": 1571951054700,
+      "bookId": 4,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951529999
+    },
+    {
+      "id": 1571951055498,
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951530534
+    },
+    {
+      "bookId": 4,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951532811,
+      "id": 1571951055499
+    },
+    {
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951532949,
+      "id": 1571951055500
+    },
+    {
+      "bookId": 6,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951533071,
+      "id": 1571951055501
+    },
+    {
+      "bookId": 7,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951890608,
+      "id": 1571951055502
+    },
+    {
+      "id": 1571951547690,
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951890923
+    },
+    {
+      "id": 1571951548102,
+      "bookId": 2,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951891126
+    },
+    {
+      "id": 1571951549056,
+      "bookId": 3,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951891339
+    },
+    {
+      "id": 1571951846281,
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951891757
+    },
+    {
+      "id": 1571951846782,
+      "bookId": 6,
+      "userId": 1,
+      "dueInDays": 0,
+      "timestampOut": null,
+      "timestampIn": 1571951893629
+    },
+    {
+      "bookId": 1,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571951895423,
+      "timestampIn": null,
+      "id": 1571951846783
+    },
+    {
+      "id": 1571952558803,
+      "bookId": 3,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571952558803,
+      "timestampIn": null
+    },
+    {
+      "id": 1571952560144,
+      "bookId": 5,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571952560144,
+      "timestampIn": null
+    },
+    {
+      "id": 1571952559498,
+      "bookId": 4,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571952559498,
+      "timestampIn": null
+    },
+    {
+      "id": 1571952560744,
+      "bookId": 6,
+      "userId": 1,
+      "dueInDays": 7,
+      "timestampOut": 1571952560744,
+      "timestampIn": null
     }
   ]
 }
